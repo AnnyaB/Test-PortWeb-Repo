@@ -1,0 +1,114 @@
+Your task is to create an accessible and usable profile site on GitHub.
+
+The purpose of the site is to support you in applying for placements or jobs more generally.
+
+As such, you will largely define the content of the site, but you must meet the requirements of this assignment:
+
+This Assignment assesses the following module Learning Outcomes (from Definitive Module Document):
+
+Demonstrate knowledge and understanding of essential facts, concepts, principles, and theories relating to the accessibility and usability of computer-based systems.
+Demonstrate knowledge and understanding of the commercial and economic context of the development, use, and maintenance of accessible and usable computer-based systems.
+Demonstrate knowledge and understanding of how accessibility and usability concerns may be embedded in development lifecycles.
+Be able to identify and analyse and evaluate the legal, social, ethical, and professional issues involved in the accessibility and usability of computer-based systems.
+Be able to identify, propose, and communicate solutions for accessibility and usability problems effectively in written or oral forms to a 
+range of audiences.
+
+
+Assignment Tasks:
+
+Create a profile site on GitHub that can be used to support you in building your portfolio of work and applying for placements:
+Pages required
+About you- include name, year of study and award you are studying for. Placeholder image where you would put your own image (or your own image)
+Technical interests (pertinent to the area of work you are interested in)- note this is not a tutorial section, but should contain a title of the technical interest and a 1 - 2 paragraphs about your interest. An appropriate image or placeholder image should be included.
+Portfolio - relevant projects or work you have completed. Users have the option of getting a pop-up window with further information or clicking on a link to go to the project details page
+Project details page - details about the project or work
+Carry out and submit the results of a heuristic evaluation of your completed site using Nielsen's heuristics 
+You are required to use the heuristic evaluation template Download heuristic evaluation templateprovided
+You must not involve anyone in the usability evaluation of your site. Doing so may constitute an academic offence.
+Demonstrate through at least one automated conformance test that you focussed on accessibility in your development work and that the final profile site conforms to level AA of the WCAG
+You must use the WAVE pluginLinks to an external site. for your conformance test and no other technology or techniques.
+You must not involve anyone in the accessibility evaluation of your site. Doing so may constitute an academic offence.
+ Constraints
+
+You are also marked on:
+
+Your use HTML, CSS and JavaScript that you have created. You must not use templates or libraries.
+Your use of software versioning using GitHub- you must make regular contributions to your repository on GitHub
+Your site being hosted on GitHub- your site must be hosted on GitHub
+ 
+
+ 
+
+Submission Requirements:
+
+ As well as your files on GitHub, you must submit your accessibility and usability reports to Canvas.
+
+ Marks awarded for:
+
+Please refer to marking scheme below
+
+Criterion	Outstanding (4-5)	
+
+(1) Profile Site	
+
+Makes use of only vanilla HTML, CSS, JavaScript 
+
+All pages required are included with real information and meet the specification and/or content 
+
+Valid and semantic markup
+
+External CSS file used. No style issues.
+
+External JavaScript used. No bugs.
+
+ 
+(2) Accessibility
+
+Use of WAVE only for conformance tests
+
+Two conformance tests are reported with the first taking place part-way through the development work and the second prior to the submission of this assignment.
+
+Where there are conformance errors an account of what they were and how they were fixed is provided.
+
+Results are presented with screenshots of pertinent aspects of the website.
+
+Clear judgement made about what should be reported for either test. This should include reference to further testing needed (i.e. issues that conformance testing may not cover)
+
+Final profile site conforms with the WCAG at level AA (or beyond)
+ 
+(3) Usability 
+Heuristic Evaluation carried out systematically and reports both issues and features.
+
+Clearly objective in that it is not used to justify design choices but to uncover usability issues.
+
+Appropriate severity rating and issue identification with all relevant heuristics reported in full.
+
+The report is based on the template and provides comprehensive coverage of the site. It is clear and easy to follow.
+
+ (4) Way of working 
+
+ Regular and consistent commits across the development of the profile site.
+
+Comments on commits set out rationale for the work being done; comments are consistently about accessibility concerns.
+
+Work regularly pushed to remote repository.
+
+Systematic use of issues to manage the work.
+
+Consistent use of branches
+
+Additional information:
+
+Please familiarise yourself with regulations governing assessment offences including Plagiarism and CollusionLinks to an external site. (UPR AS14).
+Engage with guidance for avoiding plagiarism via the University SkillUp moduleLinks to an external site. and 1-2-1 sessions with our specialist SASH team. 
+For undergraduate modules:
+a score of 40% or above represents a pass performance at honours level.
+late submission of any item of coursework for each day or part thereof (or for hard copy submission only, working day or part thereof) for up to five days after the published deadline, coursework relating to modules at Levels 0, 4, 5, 6 submitted late (including deferred coursework, but with the exception of referred coursework), will have the numeric grade reduced by 10 grade points until or unless the numeric grade reaches or is 40. Where the numeric grade awarded for the assessment is less than 40, no lateness penalty will be applied.
+ 
+
+ 
+
+ 
+ 
+
+ 
