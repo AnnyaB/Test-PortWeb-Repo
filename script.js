@@ -1,25 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM fully loaded and parsed');
-
-    const projectSections = document.querySelectorAll('section.interest');
-    console.log('Found project sections:', projectSections.length);
+    const projectSections = document.querySelectorAll('section');
 
     projectSections.forEach(section => {
         section.addEventListener('click', function() {
-            const projectName = section.querySelector('h2').innerText;
-            alert(`You clicked on the project: ${projectName}`);
+            alert(`You clicked on the project: ${section.querySelector('h2').innerText}`);
         });
     });
 
+    // Function to handle navigation link clicks
     const navLinks = document.querySelectorAll('nav a');
-    console.log('Found navigation links:', navLinks.length);
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
-            event.preventDefault();
+            event.preventDefault(); // Prevent the default link behavior
             const targetPage = link.getAttribute('href');
-            alert(`Navigating to: ${targetPage}`);
-            window.location.href = targetPage;
+            alert(`Navigating to: ${targetPage}`); // Simple alert for navigation feedback
+            window.location.href = targetPage; // Navigate to the new page
         });
     });
 });
+
+
+
+
