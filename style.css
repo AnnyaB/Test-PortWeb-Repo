@@ -45,8 +45,10 @@ main {
 }
 
 h1 {
-    color: #333; /* Ensure header is dark for contrast */
-    font-size: 2.5em; /* Increased font size for emphasis */
+    color: #fff; /* White color for the header */
+    font-size: 3em; /* Increased font size for emphasis */
+    text-align: center; /* Center the title */
+    margin-top: 20px; /* Add some space above the title */
 }
 
 h2 {
