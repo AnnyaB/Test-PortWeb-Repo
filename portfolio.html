@@ -2,101 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Riya Basak</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="technical.html">Technical Interests</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
+        <h1>Riya Basak</h1>
+        <p>Email: <a href="mailto:riyabasak639@gmail.com">riyabasak639@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/riya-b-506346315" target="_blank">LinkedIn Profile</a></p>
     </header>
+    
     <main>
-        <section id="portfolio">
-            <h1>My Portfolio</h1>
-            <img src="images/placeholder.jpg" alt="Portfolio Placeholder" class="profile-image">
-            
-            <h2>Projects Overview</h2>
+        <section>
+            <h2>Projects</h2>
             <div class="project-summary">
                 <h3>Fruit-Picker</h3>
-                <p>A binary search-based picker game enhancing my DSA skills.</p>
+                <p>Based on DSA concepts. I have tried my hands on "choose and display" implementation. Used binary search (log n) time complexity.</p>
+                <button onclick="toggleDetails('fruitPickerDetails')">Find Out More</button>
+                <div id="fruitPickerDetails" class="project-details">
+                    <h4>What I Learned:</h4>
+                    <p>Gained a deeper understanding of binary search algorithms.</p>
+                    <h4>Challenges Faced:</h4>
+                    <p>Debugging issues related to time complexity and data handling.</p>
+                    <h4>Achievements:</h4>
+                    <p>Successfully implemented the game with real-time scoring.</p>
+                </div>
             </div>
+
             <div class="project-summary">
                 <h3>Maze Runner</h3>
-                <p>Implemented an A* pathfinding algorithm to solve mazes.</p>
+                <p>Based on A* algorithm (pathfinding algorithm). Designed exclusively to test my basic understanding.</p>
+                <button onclick="toggleDetails('mazeRunnerDetails')">Find Out More</button>
+                <div id="mazeRunnerDetails" class="project-details">
+                    <h4>What I Learned:</h4>
+                    <p>Enhanced my understanding of pathfinding algorithms.</p>
+                    <h4>Challenges Faced:</h4>
+                    <p>Complexity in visualizing the pathfinding process.</p>
+                    <h4>Achievements:</h4>
+                    <p>Successfully visualized paths in real-time during execution.</p>
+                </div>
             </div>
+
             <div class="project-summary">
-                <h3>Rapid Retreat</h3>
-                <p>Focused on fundamental OOP principles using Java.</p>
+                <h3>Rapid-Retreat</h3>
+                <p>Designed to test grip of fundamental OOP in Java.</p>
+                <button onclick="toggleDetails('rapidRetreatDetails')">Find Out More</button>
+                <div id="rapidRetreatDetails" class="project-details">
+                    <h4>What I Learned:</h4>
+                    <p>Improved my understanding of Object-Oriented Programming concepts.</p>
+                    <h4>Challenges Faced:</h4>
+                    <p>Implementing class structures effectively.</p>
+                    <h4>Achievements:</h4>
+                    <p>Successfully applied OOP principles in a practical scenario.</p>
+                </div>
             </div>
+
             <div class="project-summary">
                 <h3>Serpent Snack</h3>
-                <p>A classic snake game that improved my game development skills.</p>
+                <p>A classic snake game where players control a growing worm, navigating a grid to collect apples while avoiding collisions with walls and its own tail.</p>
+                <button onclick="toggleDetails('serpentSnackDetails')">Find Out More</button>
+                <div id="serpentSnackDetails" class="project-details">
+                    <h4>What I Learned:</h4>
+                    <p>Developed skills in game mechanics and user interface design.</p>
+                    <h4>Challenges Faced:</h4>
+                    <p>Ensuring responsive gameplay and collision detection.</p>
+                    <h4>Achievements:</h4>
+                    <p>Created an engaging gaming experience for users.</p>
+                </div>
             </div>
+
             <div class="project-summary">
                 <h3>Memory Matching Puzzle</h3>
-                <p>A memory game that enhanced my understanding of game mechanics.</p>
+                <p>A captivating puzzle game that challenges players to find matching card pairs, enhancing memory and concentration skills.</p>
+                <button onclick="toggleDetails('memoryMatchingDetails')">Find Out More</button>
+                <div id="memoryMatchingDetails" class="project-details">
+                    <h4>What I Learned:</h4>
+                    <p>Honed my skills in game design and user engagement strategies.</p>
+                    <h4>Challenges Faced:</h4>
+                    <p>Balancing difficulty to ensure user enjoyment.</p>
+                    <h4>Achievements:</h4>
+                    <p>Successfully designed a fun and challenging game.</p>
+                </div>
             </div>
+
             <div class="project-summary">
-                <h3>Convolutional Neural Network (CNN)</h3>
-                <p>Developed a CNN from scratch for image classification tasks.</p>
+                <h3>CNN from Scratch</h3>
+                <p>Implemented a Convolutional Neural Network from scratch to deepen my understanding of deep learning.</p>
+                <button onclick="toggleDetails('cnnDetails')">Find Out More</button>
+                <div id="cnnDetails" class="project-details">
+                    <h4>What I Learned:</h4>
+                    <p>Gained insights into neural network architecture and training processes.</p>
+                    <h4>Challenges Faced:</h4>
+                    <p>Understanding the math behind convolution and backpropagation.</p>
+                    <h4>Achievements:</h4>
+                    <p>Successfully trained a model to recognize images with high accuracy.</p>
+                </div>
             </div>
+        </section>
 
+        <section>
             <h2>Work Experience</h2>
-            <div class="work-experience">
-                <h3>IIRS (ISRO) - Remote Sensing Technician</h3>
-                <p><strong>October 2022 – March 2023</strong></p>
-                <ul>
-                    <li>Gained basic understanding of mathematics applied to space science projects.</li>
-                    <li>Built strong analytical and research fundamentals through remote sensing work.</li>
-                    <li>Developed foundational knowledge in LiDAR, GIS, geospatial analysis, and optics.</li>
-                    <li>Collaborated with 4 interns using SCRUM methodology.</li>
-                </ul>
-                
-                <h3>Apple Developer Academy - Student Developer Intern</h3>
-                <p><strong>June 2024 – Present</strong></p>
-                <ul>
-                    <li>Learning the Swift programming language for iOS app development and design.</li>
-                    <li>Gaining valuable insights from WWDC23 winners to refine my development skills.</li>
-                    <li>Exploring frameworks and tools to enhance app-building techniques for iOS.</li>
-                    <li>Collaborating with peers on the Swift Student Challenge preparation.</li>
-                </ul>
-                
-                <h3>Limago GmbH - Data Clerk</h3>
-                <p><strong>January 2024 – April 2024</strong></p>
-                <ul>
-                    <li>Managed large volumes of data, ensuring precise entry and systematic organization.</li>
-                    <li>Maintained standards in data quality and processing efficiency.</li>
-                    <li>Enhanced problem-solving skills by resolving data inconsistencies.</li>
-                </ul>
-            </div>
-
-            <h2>Awards</h2>
             <ul>
-                <li>7 Gold Medals in International English Olympiad (IEO)</li>
-                <li>4 Gold Medals in International Mathematics Olympiad (IMO)</li>
-                <li>2 Silver Medals in National Science Olympiad (NSO)</li>
-                <li>Achieved 102nd all-India rank in JEE Advanced 2023</li>
-                <li>Secured top-tier placements in six JoSAA rounds with a JEE Mains rank of 316 (2023)</li>
+                <li>
+                    <strong>IIRS (ISRO) - Remote Sensing Technician</strong> (Oct 2022 – Mar 2023)
+                    <ul>
+                        <li>Gained basic understanding of mathematics applied to space science projects.</li>
+                        <li>Built strong analytical and research fundamentals through remote sensing work.</li>
+                        <li>Developed foundational knowledge in LiDAR, GIS, geospatial analysis, and optics.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Apple Developer Academy - Student Developer Intern</strong> (Jun 2024 – Present)
+                    <ul>
+                        <li>Learning the Swift programming language for iOS app development.</li>
+                        <li>Exploring frameworks and tools to enhance app-building techniques.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>limago GmbH - Data Clerk</strong> (Jan 2024 – Apr 2024)
+                    <ul>
+                        <li>Managed large volumes of data, ensuring precise entry and organization.</li>
+                        <li>Enhanced problem-solving skills by identifying data inconsistencies.</li>
+                    </ul>
+                </li>
             </ul>
+        </section>
 
+        <section>
+            <h2>Awards and Achievements</h2>
+            <ul>
+                <li>7 golds in IEO, 4 golds in IMO, 2 silvers in NSO (2016-2023).</li>
+                <li>Achieved 102nd all-India rank in JEE Advanced 2023.</li>
+            </ul>
+        </section>
+
+        <section>
             <h2>Skills</h2>
             <ul>
-                <li>Programming Languages: Python, Java, C, Assembly, JavaScript (Beginner), PL/SQL</li>
+                <li>Programming Languages: Python, Java, C, JavaScript (Beginner), PL/SQL</li>
                 <li>Databases: PostgreSQL, Oracle Database</li>
-                <li>Frameworks & Libraries: TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, NLTK</li>
-                <li>Tools: Microsoft PowerPoint, Word</li>
-                <li>Languages: English (Fluent), Bengali (Native)</li>
+                <li>Tools: TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, NLTK</li>
             </ul>
         </section>
     </main>
-    <script src="js/script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+               
+            
