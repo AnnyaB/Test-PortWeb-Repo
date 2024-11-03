@@ -1,63 +1,84 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Header */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 
+/* Main Section */
 main {
     padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .project {
+    background: #ffffff;
     border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 15px;
-    margin: 10px 0;
+    margin-bottom: 20px;
 }
 
-.project h2 {
-    margin: 0;
+.profile-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.toggle-details {
-    background-color: #007bff;
-    color: white;
-    border: none;
+.toggle-button {
+    display: inline-block;
     padding: 10px 15px;
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
 }
 
-.project-details {
-    display: none; /* Initially hide details */
-    margin-top: 10px;
+.toggle-button:hover {
+    background: #475b63;
 }
 
-.project-details h3 {
-    margin: 5px 0;
-} 
+.details {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
 
 
-    
