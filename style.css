@@ -44,8 +44,13 @@ main {
     margin: auto; /* Center the main content */
 }
 
-h1, h2 {
-    color: #333; /* Ensure headers are dark for contrast */
+h1 {
+    color: #333; /* Ensure header is dark for contrast */
+    font-size: 2.5em; /* Increased font size for emphasis */
+}
+
+h2 {
+    color: #333; /* Ensure subheadings are dark for contrast */
 }
 
 /* Project Section Styles */
@@ -88,3 +93,4 @@ h1, h2 {
         margin: 5px 0; /* Spacing between stacked links */
     }
 }
+
