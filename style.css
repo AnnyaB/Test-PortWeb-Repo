@@ -1,82 +1,90 @@
-/* Basic reset for margins and paddings */
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
-/* Body styles */
-body {
-    font-family: Arial, sans-serif; /* Clear and readable font */
-    line-height: 1.6; /* Improved readability */
-    color: #333; /* Dark text for contrast */
-    background-color: #f9f9f9; /* Light background */
-}
-
-/* Header styles */
+/* Navigation Styles */
 header {
-    background-color: #4CAF50; /* Primary color for header */
-    color: white; /* White text for contrast */
-    padding: 20px; /* Space around text */
-    text-align: center; /* Centered header text */
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
 
-/* Main content styles */
-main {
-    padding: 20px; /* Space around main content */
-    max-width: 800px; /* Limit width for better readability */
-    margin: auto; /* Center the main content */
-    background-color: white; /* White background for main content */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Section styles */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Styles */
 section {
-    margin-bottom: 20px; /* Space between sections */
+    padding: 40px 20px;
+    text-align: center;
 }
 
-h2, h3 {
-    color: #4CAF50; /* Consistent heading color */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-ul {
-    list-style-type: disc; /* Standard bullet points */
-    padding-left: 20px; /* Indentation for list items */
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
-/* Footer styles */
-footer {
-    text-align: center; /* Centered footer text */
-    padding: 10px 0; /* Space around footer */
-    background-color: #333; /* Dark footer background */
-    color: white; /* White text for contrast */
-    position: relative; /* To position footer correctly */
-    bottom: 0; /* Align footer to the bottom */
-    width: 100%; /* Full width */
+.modal-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
 }
 
-/* Navigation styles */
-nav a {
-    color: #4CAF50; /* Primary color for links */
-    text-decoration: none; /* No underline */
-    margin: 0 15px; /* Space between links */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-nav a:hover {
-    text-decoration: underline; /* Underline on hover for clarity */
+/* Animation Styles */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease-in-out;
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 600px) {
-    header, footer {
-        text-align: center; /* Center text on small screens */
-    }
-    main {
-        padding: 10px; /* Less padding on small screens */
-    }
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-
-
-
+   
    
