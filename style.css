@@ -52,7 +52,9 @@ h1 {
 }
 
 h2 {
-    color: #333; /* Dark color for the Technical Interests section header */
+    color: #333; /* Dark color for the section header */
+    font-size: 2em; /* Make the heading larger for emphasis */
+    margin-top: 20px; /* Add spacing above the section header */
 }
 
 /* Project Section Styles */
@@ -95,4 +97,5 @@ h2 {
         margin: 5px 0; /* Spacing between stacked links */
     }
 }
+
 
