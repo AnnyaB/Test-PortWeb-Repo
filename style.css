@@ -1,90 +1,63 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f9f9f9;
 }
 
-/* Navigation Styles */
 header {
-    background-color: #444;
+    background: #333;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
-/* Section Styles */
-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Modal Styles */
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.modal-box {
-    background: #fff;
+main {
     padding: 20px;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 600px;
-    position: relative;
 }
 
-.close-modal {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
+.project {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.project h2 {
+    margin: 0;
+}
+
+.toggle-details {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-/* Animation Styles */
-.animate-on-scroll {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.5s ease-in-out;
+.project-details {
+    display: none; /* Initially hide details */
+    margin-top: 10px;
 }
 
-.animate-on-scroll.visible {
-    opacity: 1;
-    transform: translateY(0);
+.project-details h3 {
+    margin: 5px 0;
 }
 
-   
-   
+
+    
