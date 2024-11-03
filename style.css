@@ -1,84 +1,44 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding */
 }
 
-/* Header */
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
+.container {
+    max-width: 800px; /* Limit container width */
+    margin: auto; /* Center the container */
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
+.portfolio-title {
+    color: #003366; /* Dark blue for the title */
+    font-size: 2.5em; /* Larger font size for emphasis */
+    text-align: center; /* Center align the title */
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.contact-info {
+    color: #000; /* Black for "Email" and "LinkedIn" labels */
+    font-size: 1.2em; /* Slightly larger font for readability */
+    margin: 10px 0; /* Spacing between contact info */
 }
 
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
+.contact-link {
+    color: #2980b9; /* Blue for links */
+    text-decoration: none; /* Remove underline from links */
 }
 
-/* Main Section */
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
+.contact-link:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
+/* Optional: Style for project details, if you have any */
 .project {
-    background: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 20px;
+    background-color: #ffffff; /* White background for project details */
+    padding: 15px; /* Padding for project details */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px 0; /* Margin between project details */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.profile-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.toggle-button {
-    display: inline-block;
-    padding: 10px 15px;
-    background: #35424a;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.toggle-button:hover {
-    background: #475b63;
-}
-
-.details {
-    margin-top: 10px;
-    padding: 10px;
-    border-top: 1px solid #ccc;
-}
-
+    
 
