@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="css/styles.css">
@@ -11,48 +12,102 @@
         <nav>
             <ul>
                 <li><a href="index.html">About Me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="technical.html">Technical Interests</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="animate-on-scroll">
-            <h2>Memory Matching Puzzle</h2>
-            <p>A captivating puzzle game designed to challenge players to find matching card pairs, enhancing memory and concentration skills.</p>
-        </section>
-        <section class="animate-on-scroll">
-            <h2>Serpent Snack</h2>
-            <p>A classic snake game where players control a growing worm, navigating a grid to collect apples while avoiding collisions with walls and its own tail.</p>
-        </section>
-        <section class="animate-on-scroll">
-            <h2>Fruit Picker Game</h2>
-            <p>Based on DSA concepts, I implemented a "choose and display" functionality using binary search with logarithmic time complexity in Python and tkinter.</p>
-        </section>
-        <section class="animate-on-scroll">
-            <h2>Rapid Retreat</h2>
-            <p>A game designed to test my grip of fundamental Object-Oriented Programming (OOP) concepts in Java.</p>
-        </section>
-        <section class="animate-on-scroll">
-            <h2>Maze Runner</h2>
-            <p>A project based on the A* pathfinding algorithm, designed to demonstrate my understanding of basic algorithms and data structures.</p>
-        </section>
-        <section class="animate-on-scroll">
-            <h2>CNN from Scratch</h2>
-            <p>Currently building a Convolutional Neural Network from scratch to deepen my understanding of deep learning and its applications.</p>
+        <section id="projects">
+            <h1>My Projects</h1>
+
+            <div class="project">
+                <h2>Fruit Picker</h2>
+                <p>Based on DSA concepts, implementing "choose and display" with binary search (O(log n) time complexity).</p>
+                <button class="toggle-details" onclick="toggleDetails('details-fruit-picker')">Find Out More</button>
+                <div id="details-fruit-picker" class="project-details">
+                    <h3>What I Learned:</h3>
+                    <p>Understanding of binary search algorithm and its efficiency.</p>
+                    <h3>Challenges Faced:</h3>
+                    <p>Debugging logical errors in the implementation of the search function.</p>
+                    <h3>Achievements:</h3>
+                    <p>Successfully implemented the search mechanism, improving response time.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>Maze Runner</h2>
+                <p>Pathfinding project using the A* algorithm to test my understanding.</p>
+                <button class="toggle-details" onclick="toggleDetails('details-maze-runner')">Find Out More</button>
+                <div id="details-maze-runner" class="project-details">
+                    <h3>What I Learned:</h3>
+                    <p>Deep understanding of the A* algorithm and heuristic functions.</p>
+                    <h3>Challenges Faced:</h3>
+                    <p>Optimizing pathfinding efficiency and handling edge cases in maze configuration.</p>
+                    <h3>Achievements:</h3>
+                    <p>Developed a working application that effectively finds the shortest path.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>Rapid Retreat</h2>
+                <p>Designed to test fundamental OOP concepts in Java.</p>
+                <button class="toggle-details" onclick="toggleDetails('details-rapid-retreat')">Find Out More</button>
+                <div id="details-rapid-retreat" class="project-details">
+                    <h3>What I Learned:</h3>
+                    <p>Mastery of OOP principles such as encapsulation and inheritance.</p>
+                    <h3>Challenges Faced:</h3>
+                    <p>Implementing design patterns to improve code structure.</p>
+                    <h3>Achievements:</h3>
+                    <p>Created a robust application demonstrating advanced OOP practices.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>Serpent Snack</h2>
+                <p>A classic snake game in Python.</p>
+                <button class="toggle-details" onclick="toggleDetails('details-serpent-snack')">Find Out More</button>
+                <div id="details-serpent-snack" class="project-details">
+                    <h3>What I Learned:</h3>
+                    <p>Game development principles and user input handling in Python.</p>
+                    <h3>Challenges Faced:</h3>
+                    <p>Ensuring smooth gameplay and collision detection.</p>
+                    <h3>Achievements:</h3>
+                    <p>Built an interactive game with responsive controls and engaging gameplay.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>Memory Matching Puzzle</h2>
+                <p>A captivating puzzle game to enhance memory and concentration skills.</p>
+                <button class="toggle-details" onclick="toggleDetails('details-memory-matching')">Find Out More</button>
+                <div id="details-memory-matching" class="project-details">
+                    <h3>What I Learned:</h3>
+                    <p>Skills in creating engaging user interfaces and managing game states.</p>
+                    <h3>Challenges Faced:</h3>
+                    <p>Balancing game difficulty and ensuring user engagement.</p>
+                    <h3>Achievements:</h3>
+                    <p>Developed a fun and challenging game with interactive elements.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>CNN from Scratch</h2>
+                <p>Building a Convolutional Neural Network from scratch to understand deep learning concepts.</p>
+                <button class="toggle-details" onclick="toggleDetails('details-cnn')">Find Out More</button>
+                <div id="details-cnn" class="project-details">
+                    <h3>What I Learned:</h3>
+                    <p>Fundamentals of neural networks and the architecture of CNNs.</p>
+                    <h3>Challenges Faced:</h3>
+                    <p>Implementing backpropagation and tuning hyperparameters for better performance.</p>
+                    <h3>Achievements:</h3>
+                    <p>Successfully trained a CNN model on image classification tasks with improved accuracy.</p>
+                </div>
+            </div>
+
         </section>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="technical.html">Technical Interests</a></li>
-            </ul>
-        </nav>
-    </footer>
     <script src="js/script.js"></script>
 </body>
-</html>  
-
-
+</html>
