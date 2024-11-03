@@ -21,6 +21,7 @@
     <main>
         <section id="projects">
             <h1>My Projects</h1>
+            
             <div class="project">
                 <h2>Fruit-Picker</h2>
                 <p>Based on DSA concepts. I have tried my hands on "choose and display" implementation. Used binary search (log n) time complexity.</p>
@@ -31,6 +32,7 @@
                     <p><strong>Achievements:</strong> Successfully implemented a functional and efficient picker game.</p>
                 </div>
             </div>
+
             <div class="project">
                 <h2>Maze Runner</h2>
                 <p>Based on A* algorithm (pathfinding algorithm). Designed exclusively to test my basic understanding.</p>
@@ -41,6 +43,7 @@
                     <p><strong>Achievements:</strong> Developed a functioning maze solver with visual representation.</p>
                 </div>
             </div>
+
             <div class="project">
                 <h2>Rapid Retreat</h2>
                 <p>Designed to test grip of fundamental OOP in Java.</p>
@@ -51,6 +54,7 @@
                     <p><strong>Achievements:</strong> Created a well-structured application demonstrating OOP concepts.</p>
                 </div>
             </div>
+
             <div class="project">
                 <h2>Serpent Snack</h2>
                 <p>A classic snake game where players control a growing worm, navigating a grid to collect apples.</p>
@@ -61,6 +65,7 @@
                     <p><strong>Achievements:</strong> Delivered an engaging and playable snake game with smooth mechanics.</p>
                 </div>
             </div>
+
             <div class="project">
                 <h2>Memory Matching Puzzle</h2>
                 <p>A captivating puzzle game that challenges players to find matching card pairs.</p>
@@ -71,6 +76,7 @@
                     <p><strong>Achievements:</strong> Created an interactive game that tests memory and concentration.</p>
                 </div>
             </div>
+
             <div class="project">
                 <h2>Convolutional Neural Network (CNN)</h2>
                 <p>Developed a CNN from scratch for image classification.</p>
@@ -81,11 +87,24 @@
                     <p><strong>Achievements:</strong> Built a functional CNN that performs well on image datasets.</p>
                 </div>
             </div>
+
+            <!-- GitHub Link -->
+            <div class="github-link">
+                <a href="https://github.com/your-github-username" target="_blank">
+                    <img src="images/github-icon.png" alt="GitHub Icon" style="width: 32px; height: 32px;"> Visit my GitHub
+                </a>
+            </div>
         </section>
     </main>
-    <script src="js/script.js"></script>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block"; // Show details
+            } else {
+                details.style.display = "none"; // Hide details
+            }
+        }
+    </script>
 </body>
 </html>
-
-                
-                
