@@ -44,8 +44,17 @@ main {
     margin: auto; /* Center the main content */
 }
 
-h1 {
-    color: #fff; /* White color for the header */
+/* Welcome Message Header */
+h1.welcome {
+    color: #fff; /* White color for the welcome message */
+    font-size: 3em; /* Increased font size for emphasis */
+    text-align: center; /* Center the title */
+    margin-top: 20px; /* Add some space above the title */
+}
+
+/* Technical Interests Header */
+h1.technical-interests {
+    color: #000; /* Black color for the technical interests header */
     font-size: 3em; /* Increased font size for emphasis */
     text-align: center; /* Center the title */
     margin-top: 20px; /* Add some space above the title */
@@ -97,5 +106,6 @@ h2 {
         margin: 5px 0; /* Spacing between stacked links */
     }
 }
+
 
 
