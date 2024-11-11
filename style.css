@@ -1,42 +1,28 @@
-/* Define light and dark theme colors using CSS variables */
-:root {
-    --bg-color: #f0f0f0; /* Light background */
-    --text-color: #333; /* Dark text */
-    --header-bg-color: #333; /* Dark background for header */
-    --link-color: #fff; /* White links */
-    --link-hover-bg: #555; /* Darker background on hover */
-    --project-bg-color: #fff; /* White background for project sections */
-    --border-color: #ccc; /* Light border color */
-    --button-bg-color: #333; /* Dark button background */
-    --button-hover-bg: #555; /* Darker button on hover */
-}
-
-[data-theme="dark"] {
-    --bg-color: #121212; /* Dark background */
-    --text-color: #f0f0f0; /* Light text */
-    --header-bg-color: #333; /* Dark header background */
-    --link-color: #fff; /* White links */
-    --link-hover-bg: #888; /* Lighter background on hover */
-    --project-bg-color: #1e1e1e; /* Darker project section background */
-    --border-color: #444; /* Darker border color */
-    --button-bg-color: #444; /* Dark button background */
-    --button-hover-bg: #666; /* Darker button on hover */
-}
-
 /* General Styles */
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: #f0f0f0; /* Default Light Mode Background */
+    color: #333; /* Default Light Mode Text Color */
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
-/* Header and Navigation */
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #2c2c2c; /* Dark background for dark mode */
+    color: #fff; /* White text color for dark mode */
+}
+
 header {
-    background-color: var(--header-bg-color);
+    background-color: #333;
     padding: 10px 0;
+}
+
+header .welcome {
+    color: #fff; /* White text for the header */
+    text-align: center;
 }
 
 nav ul {
@@ -51,7 +37,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--link-color);
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
@@ -60,77 +46,49 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: var(--link-hover-bg);
+    background-color: #555;
 }
 
-/* Main Content */
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #f0f0f0; /* Light background */
+    color: #333; /* Dark text for light mode */
+}
+
 main {
     max-width: 800px;
     margin: auto;
 }
 
-/* Welcome Message Header */
-h1.welcome {
-    color: #fff;
-    font-size: 3em;
+footer {
     text-align: center;
     margin-top: 20px;
 }
 
-/* Technical Interests Header */
-h1.technical-interests {
-    color: #000;
-    font-size: 3em;
-    text-align: center;
-    margin-top: 20px;
-}
-
-h2 {
-    color: var(--text-color);
-    font-size: 2em;
-    margin-top: 20px;
-}
-
-/* Project Section Styles */
-.project {
-    background-color: var(--project-bg-color);
-    padding: 15px;
-    margin: 15px 0;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-}
-
-.toggle-button {
-    background-color: var(--button-bg-color);
+button#modeToggle {
+    background-color: #333;
     color: white;
+    padding: 10px;
     border: none;
-    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
-.toggle-button:hover {
-    background-color: var(--button-hover-bg);
+button#modeToggle:hover {
+    background-color: #555;
 }
 
-/* GitHub Link */
-.github-link {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.github-link img {
-    vertical-align: middle;
-}
-
-/* Responsive Design */
+/* Responsive Design for Small Screens */
 @media (max-width: 600px) {
     nav ul li {
         display: block;
         margin: 5px 0;
     }
 }
+
 
 
 
