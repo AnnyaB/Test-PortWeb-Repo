@@ -1,22 +1,26 @@
-// Function to toggle visibility of project details
-function toggleDetails(id) {
-    const details = document.getElementById(id);
-    // Toggle the display between block and none
-    details.style.display = (details.style.display === "block") ? "none" : "block";
+// Function to toggle dark and light modes
+function toggleMode() {
+    const body = document.body;
+    const currentMode = body.classList.contains('dark-mode') ? 'dark' : 'light';
+
+    // Toggle between dark and light mode
+    if (currentMode === 'light') {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        localStorage.setItem('mode', 'dark'); // Save the user's preference
+    } else {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        localStorage.setItem('mode', 'light'); // Save the user's preference
+    }
 }
 
-// Set project details to be hidden initially
-document.addEventListener("DOMContentLoaded", () => {
-    // Initially hide all project details
-    document.querySelectorAll('.project-details').forEach(details => {
-        details.style.display = 'none';
-    });
+// On page load, set the mode based on the saved preference (if any)
+document.addEventListener('DOMContentLoaded', () => {
+    const savedMode = localStorage.getItem('mode') || 'light'; // Default to light mode
+    document.body.classList.add(savedMode + '-mode');
 
-    // Add event listeners to all project titles or buttons that should toggle details
-    document.querySelectorAll('.toggle-details-button').forEach(button => {
-        button.addEventListener('click', () => {
-            const projectId = button.getAttribute('data-project-id');
-            toggleDetails(projectId);
-        });
-    });
+    // Add event listener to the mode toggle button
+    const toggleButton = document.getElementById('modeToggle');
+    toggleButton.addEventListener('click', toggleMode);
 });
