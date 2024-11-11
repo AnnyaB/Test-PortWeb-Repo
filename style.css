@@ -1,16 +1,41 @@
+/* Define light and dark theme colors using CSS variables */
+:root {
+    --bg-color: #f0f0f0; /* Light background */
+    --text-color: #333; /* Dark text */
+    --header-bg-color: #333; /* Dark background for header */
+    --link-color: #fff; /* White links */
+    --link-hover-bg: #555; /* Darker background on hover */
+    --project-bg-color: #fff; /* White background for project sections */
+    --border-color: #ccc; /* Light border color */
+    --button-bg-color: #333; /* Dark button background */
+    --button-hover-bg: #555; /* Darker button on hover */
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212; /* Dark background */
+    --text-color: #f0f0f0; /* Light text */
+    --header-bg-color: #333; /* Dark header background */
+    --link-color: #fff; /* White links */
+    --link-hover-bg: #888; /* Lighter background on hover */
+    --project-bg-color: #1e1e1e; /* Darker project section background */
+    --border-color: #444; /* Darker border color */
+    --button-bg-color: #444; /* Dark button background */
+    --button-hover-bg: #666; /* Darker button on hover */
+}
+
 /* General Styles */
 body {
-    background-color: #f0f0f0; /* Light grey background */
-    color: #333; /* Dark text color for better contrast */
-    font-family: Arial, sans-serif; /* Font for better readability */
-    line-height: 1.6; /* Increased line height for readability */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 20px;
 }
 
 /* Header and Navigation */
 header {
-    background-color: #333; /* Dark background for header */
+    background-color: var(--header-bg-color);
     padding: 10px 0;
 }
 
@@ -26,86 +51,87 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* White text for links */
-    text-decoration: none; /* Remove underline from links */
+    color: var(--link-color);
+    text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth background transition */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #555; /* Darker shade on hover */
+    background-color: var(--link-hover-bg);
 }
 
 /* Main Content */
 main {
-    max-width: 800px; /* Limit width for better readability */
-    margin: auto; /* Center the main content */
+    max-width: 800px;
+    margin: auto;
 }
 
 /* Welcome Message Header */
 h1.welcome {
-    color: #fff; /* White color for the welcome message */
-    font-size: 3em; /* Increased font size for emphasis */
-    text-align: center; /* Center the title */
-    margin-top: 20px; /* Add some space above the title */
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* Technical Interests Header */
 h1.technical-interests {
-    color: #000; /* Black color for the technical interests header */
-    font-size: 3em; /* Increased font size for emphasis */
-    text-align: center; /* Center the title */
-    margin-top: 20px; /* Add some space above the title */
+    color: #000;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
 }
 
 h2 {
-    color: #333; /* Dark color for the section header */
-    font-size: 2em; /* Make the heading larger for emphasis */
-    margin-top: 20px; /* Add spacing above the section header */
+    color: var(--text-color);
+    font-size: 2em;
+    margin-top: 20px;
 }
 
 /* Project Section Styles */
 .project {
-    background-color: #fff; /* White background for project sections */
+    background-color: var(--project-bg-color);
     padding: 15px;
     margin: 15px 0;
-    border: 1px solid #ccc; /* Light border for separation */
-    border-radius: 5px; /* Rounded corners */
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
 }
 
 .toggle-button {
-    background-color: #333; /* Dark button background */
-    color: white; /* White text on buttons */
+    background-color: var(--button-bg-color);
+    color: white;
     border: none;
     padding: 10px 15px;
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor for buttons */
-    transition: background-color 0.3s ease; /* Smooth background transition */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .toggle-button:hover {
-    background-color: #555; /* Darker shade on hover */
+    background-color: var(--button-hover-bg);
 }
 
 /* GitHub Link */
 .github-link {
-    text-align: center; /* Center the GitHub link */
-    margin-top: 20px; /* Spacing above the link */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .github-link img {
-    vertical-align: middle; /* Align icon vertically with text */
+    vertical-align: middle;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
     nav ul li {
-        display: block; /* Stack navigation links on small screens */
-        margin: 5px 0; /* Spacing between stacked links */
+        display: block;
+        margin: 5px 0;
     }
 }
+
 
 
 
