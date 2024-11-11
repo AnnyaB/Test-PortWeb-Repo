@@ -1,26 +1,28 @@
-// Function to toggle dark and light modes
-function toggleMode() {
-    const body = document.body;
-    const currentMode = body.classList.contains('dark-mode') ? 'dark' : 'light';
+// Get the button and body element
+const modeToggle = document.getElementById('modeToggle');
+const body = document.body();
 
-    // Toggle between dark and light mode
-    if (currentMode === 'light') {
-        body.classList.remove('light-mode');
-        body.classList.add('dark-mode');
-        localStorage.setItem('mode', 'dark'); // Save the user's preference
-    } else {
-        body.classList.remove('dark-mode');
-        body.classList.add('light-mode');
-        localStorage.setItem('mode', 'light'); // Save the user's preference
-    }
+// Check if dark mode is already applied
+if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    modeToggle.setAttribute('aria-pressed', 'true');
+    modeToggle.textContent = '🌞'; // Change to Sun icon for dark mode
+} else {
+    modeToggle.setAttribute('aria-pressed', 'false');
+    modeToggle.textContent = '🌙'; // Moon icon for light mode
 }
 
-// On page load, set the mode based on the saved preference (if any)
-document.addEventListener('DOMContentLoaded', () => {
-    const savedMode = localStorage.getItem('mode') || 'light'; // Default to light mode
-    document.body.classList.add(savedMode + '-mode');
-
-    // Add event listener to the mode toggle button
-    const toggleButton = document.getElementById('modeToggle');
-    toggleButton.addEventListener('click', toggleMode);
+// Add event listener for the toggle button
+modeToggle.addEventListener('click', () => {
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        modeToggle.setAttribute('aria-pressed', 'false');
+        modeToggle.textContent = '🌙'; // Moon icon for light mode
+        localStorage.setItem('theme', 'light');
+    } else {
+        body.classList.add('dark-mode');
+        modeToggle.setAttribute('aria-pressed', 'true');
+        modeToggle.textContent = '🌞'; // Sun icon for dark mode
+        localStorage.setItem('theme', 'dark');
+    }
 });
