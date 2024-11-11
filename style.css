@@ -55,6 +55,7 @@ body.light-mode {
     color: #333; /* Dark text for light mode */
 }
 
+/* Main Content Area */
 main {
     max-width: 800px;
     margin: auto;
@@ -65,18 +66,22 @@ footer {
     margin-top: 20px;
 }
 
+/* Dark Mode Button */
 button#modeToggle {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     position: fixed;
     top: 20px;
     right: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
+/* Dark Mode Button Hover */
 button#modeToggle:hover {
     background-color: #555;
 }
@@ -87,7 +92,15 @@ button#modeToggle:hover {
         display: block;
         margin: 5px 0;
     }
+
+    button#modeToggle {
+        padding: 10px;
+        font-size: 14px; /* Adjust font size for smaller screens */
+        top: 10px;
+        right: 10px;
+    }
 }
+
 
 
 
